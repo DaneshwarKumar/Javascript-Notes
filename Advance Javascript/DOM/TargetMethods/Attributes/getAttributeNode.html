@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Attribute Nodes </title>
+</head>
+<body>
+
+    <!-- This function will returns attrubutes with values  -->
+
+    <h1 id="html" style="border: 2px solid red;">HTML</h1>
+    <h1 id="css" style="border: 2px solid green;">CSS</h1>
+    <h1 id="js" style="border: 2px solid blue;">Javascript</h1>
+    <h1 id="react" style="border: 2px solid brown;">React</h1>
+
+
+    <script>
+          var html = document.getElementById('html').getAttributeNode('style');
+          var css = document.getElementById('css').getAttributeNode('style');
+          var js = document.getElementById('js').getAttributeNode('style');
+          var react = document.getElementById('react').getAttributeNode('style');
+
+          console.log(html);
+          console.log(css);
+          console.log(js);
+          console.log(react);
+
+    </script>
+    
+</body>
+</html>

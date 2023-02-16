@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- splice function used to remove array element from any index  can insert another elements  -->
+
+   <script>
+
+    var nums = [11,22,33,44,55,66,77,88,99];
+
+    console.log(nums);
+
+    // removing 33 , 44 by splice function
+    nums.splice(2,2);
+
+    console.log(nums);
+
+   </script>
+    
+
+
+    <!-- removing all the elements from given index  -->
+
+    <script>
+
+        var alpha = ['aa','bb','cc','dd','ee'];
+
+        console.log(alpha);
+
+        // removing all the elements from bb
+        alpha.splice(1);
+
+        console.log(alpha);
+
+    </script>
+
+
+
+   <!-- Removing an inserting an new elements  -->
+
+
+   <script>
+
+        var grades = ['a','b','c','d','e'];
+
+        console.log(grades);
+
+        // removing c,d and inserting cc ,dd 
+
+        grades.splice(2,2,'cc','dd');
+
+   </script>
+
+
+
+</body>
+</html>

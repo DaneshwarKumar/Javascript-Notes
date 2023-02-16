@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Element </title>
+
+    <style>
+        #outer{
+            height: 222px;
+            width: 222px;
+            border: 11px solid black;
+            margin: 111px;
+            background-color: green;
+        }
+
+        #inner{
+            height: 111px;
+            width: 111px;
+            border: 5px solid red;
+            background-color: gold;
+            margin: 44px;
+        }
+    </style>
+</head>
+<body>
+     
+    <h2>Selecting an Parent Element </h2>
+    <div id="outer">
+        <div id="inner">
+            I am Inner Box 
+        </div>
+    </div>
+
+
+    <script>
+
+        var outer = document.getElementById('outer');
+        var inner = document.getElementById('inner');
+
+        // getting the parent elements 
+        console.log(document.body.parentElement);
+
+        console.log(outer.parentElement);
+
+        console.log(inner.parentElement);
+
+    </script>
+
+
+    
+</body>
+</html>

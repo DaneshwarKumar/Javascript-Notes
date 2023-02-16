@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Class </title>
+
+    <style>
+       .background{
+        background-color: goldenrod;
+       }
+
+       #box{
+        height: 222px;
+        width: 222px;
+        border: 11px solid black;
+        background-color: green;
+        margin: 111px;
+       }
+
+    </style>
+</head>
+<body>
+
+    <!-- toggle function will add then remove class in alternate order  -->
+
+    <div id="box">
+        I AM Box 
+        <h3>Click Me </h3>
+    </div>
+
+
+    <script>
+
+        var box = document.getElementById('box');
+        
+        box.addEventListener('click' , function(){
+            box.classList.toggle('background');
+        });
+
+    </script>
+    
+</body>
+</html>

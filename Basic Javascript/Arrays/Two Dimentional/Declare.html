@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiDimentional Array </title>
+</head>
+<body>
+    
+
+    <script>
+                var bookWithpages = [["Physics",111], ["Chemistry",222] ,["Maths",333], ["Hindi",444] , ["English",555]];
+
+                console.log(bookWithpages[0][0]);
+                console.log(bookWithpages[0][1]);
+
+                console.log(bookWithpages[1][0]);
+                console.log(bookWithpages[1][1]);
+
+                console.log(bookWithpages[2][0]);
+                console.log(bookWithpages[2][1]);
+
+                console.log(bookWithpages[3][0]);
+                console.log(bookWithpages[3][1]);
+
+                console.log(bookWithpages[4][0]);
+                console.log(bookWithpages[4][1]);
+
+
+                // printing elements via loops 
+
+                for(var i=0; i<bookWithpages.length; i++)
+                {
+                    for(var j=0; j<bookWithpages[0].length; j++){
+                        console.log(bookWithpages[i][j]);
+                    }
+                }
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object data Type </title>
+</head>
+<body>
+    
+    <!-- Objects are real wolrd entity those having an property and functions  -->
+
+    <script>
+           
+           // creating object that contains only property 
+
+           var student = {firstName: 'Aman' , 
+                          lastName :'Mishra' , 
+                          rollNo : 111 , 
+                          marks : 66 };
+
+            
+            // accesing object element via dot(.) operator 
+
+            console.log(student.firstName);
+            console.log(student.lastName);
+            console.log(student.rollNo);
+            console.log(student.marks);
+
+
+            // accesing object elemets via array notations 
+
+            console.log(student['firstName']);
+            console.log(student['lastName']);
+            console.log(student['rollNo']);
+            console.log(student['marks']);
+
+
+
+            // creating object that contains both property and function 
+
+            var person = { name : 'Rakesh' ,
+                           age : 22 , 
+                           gender : 'Male',
+                           sing : function personSing(){
+                                console.log("Person is Singing ");
+                            }, 
+
+                            dance : function personDance(){
+                                console.log("Person is Dancing");
+                            }
+                        };
+
+
+
+                console.log(person);
+
+                for(var key in person){
+                    console.log(key+" : "+person[key]);
+                }
+
+                person.dance();
+                person.sing();
+
+
+            
+
+    </script>
+
+
+</body>
+</html>

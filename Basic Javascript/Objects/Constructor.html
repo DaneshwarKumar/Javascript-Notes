@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor in Objecst </title>
+</head>
+<body>
+
+
+    <script>
+        // constructor are same as a name of the function which is used to initialise an object 
+
+        function student(rollNo,firstName,lastName,age){
+           this.rollNo = rollNo;
+           this.firstName = firstName;
+           this.lastName = lastName;
+           this.age = age;
+
+           this.introduction = function intro(){
+            console.log("Hellow ! my name is "+this.firstName+" "+this.lastName+" "+" my age is "+this.age);
+           }
+
+        }
+
+
+
+        var student1 = new student(111,"Akash","Gupta",22);
+
+
+        console.log(student1.rollNo);
+        console.log(student1.firstName);
+        console.log(student1.lastName);
+        console.log(student1.age);
+        student1.introduction();
+
+
+
+        // adding new property and function in constructor using prototype 
+
+        student.prototype.school = "St. Johns Collage";
+        student.prototype.nationality = "Indian";
+
+        student.prototype.fullName = function fullName(){
+            console.log(this.firstName+" "+this.lastName);
+        }
+
+
+
+        // accesing the new property and functions 
+
+        console.log(student1.nationality);
+        console.log(student1.school);
+
+        student1.fullName();
+
+    </script>
+
+    
+</body>
+</html>

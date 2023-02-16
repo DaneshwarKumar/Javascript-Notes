@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>removeAttribute </title>
+</head>
+<body>
+
+    <div id="box" style="height: 222px; width: 222px; border: 5px solid red;"> </div>
+
+
+    <script>
+
+        var box = document.getElementById('box');
+        
+        var boxAttributes = box.attributes;
+
+        // before removing the attributes 
+        console.log(boxAttributes);
+
+        box.removeAttribute('style');
+
+        // after remove attribute 
+        console.log(boxAttributes);
+
+
+    </script>
+    
+
+</body>
+</html>

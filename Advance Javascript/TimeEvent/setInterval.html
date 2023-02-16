@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval Event</title>
+
+    <style>
+        #box{
+            height: 111px;
+            width: 111px;
+            border: 2px solid black;
+            background-color: red;
+            margin: 111px;
+        }
+    </style>
+</head>
+<body>
+
+    <!--The setInterval() method calls a function at specified intervals (in milliseconds).
+        The setInterval() method continues calling the function until clearInterval() is called, or the window is closed.
+        1 second = 1000 milliseconds. -->
+
+
+        <div id="box">
+            I Am Boss
+        </div>
+
+
+        <script>
+        
+        setInterval(slide , 1000);
+
+        var box = document.getElementById('box');
+        var a = 10;
+
+        function slide(){
+            a = a+10;
+           box.style.margin = a + 'px';
+        }
+
+        </script>
+    
+</body>
+</html>

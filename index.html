@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Welcome to Javascript </title>
+
+    <style>
+        .box{
+            display: inline-block;
+        }
+    </style>
+
+</head>
+<body>
+
+   
+    <div id="box">
+        <div id="box1" class="box" style="border : 2px solid red; height: 222px;  width: 222px; margin: 11px;" ><h1>111</h1> </div>
+        <div id="box2" class="box"  style="border : 2px solid black; height: 222px;  width: 222px; margin: 11px;"><h1>222</h1> </div>
+        <div id="box3" class="box"  style="border : 2px solid  green; height: 222px;  width: 222px; margin: 11px;"><h1>333</h1> </div>
+    </div>
+
+
+    <script>
+        // click event 
+
+        var box1 = document.getElementById('box1');
+        var box2 = document.getElementById('box2');
+        var box3 = document.getElementById('box3');
+
+
+
+        class user{
+
+            constructor(name,age,gender,city){
+                this.name = name;
+                // this.age = age;
+                this.city = city;
+                this.gender = gender;
+            }
+
+            userDetails(){
+                document.write(` ${name}  ${gender} ${city} `);
+            }
+
+        }
+
+
+        var u1 = new user("aaa", 22 , "male" ,"pune");
+        var u2 = new user("bbb", 23 , "male" , "delhi");
+        var u3 = new user("ccc", 44 , "male" , "pune");
+
+        u1.userDetails();
+        u2.userDetails();
+        u3.userDetails();
+        u4.userDetails();
+
+
+    </script>
+    
+</body>
+</html>

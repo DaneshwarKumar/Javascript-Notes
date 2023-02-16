@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onSelect </title>
+</head>
+<body>
+    
+    <!-- Call a function when some text has been selected  -->
+    <form>
+        <input type="text" placeholder="Enter Username..." onselect="myFunction(this)">  <br><br>
+        <input type="text" placeholder="Enter Password" onselect="myFunction(this)" >    <br><br>
+    </form>
+
+
+    <script>
+
+        function myFunction(){
+            console.log("Input Box Selected...");
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Replace Child </title>
+</head>
+<body>
+
+    <ol id="list">
+       <LI>Apple</LI>
+       <LI>Banana</LI>
+       <LI>Mango</LI>
+    </ol>
+
+
+    <script>
+    // creating an element 
+    var ele = document.createElement('li');
+    var text = document.createTextNode('Grapes');
+
+    ele.appendChild(text);
+
+
+    // repacing the child 
+    var list = document.getElementById('list');
+    list.replaceChild(ele,list.children[0]);
+
+        
+
+    </script>
+    
+</body>
+</html>

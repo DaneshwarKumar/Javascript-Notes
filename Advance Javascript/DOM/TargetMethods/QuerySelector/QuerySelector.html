@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector </title>
+</head>
+<body>
+    
+    <!-- The querySelector() method returns the first element that matches a CSS selector.
+         To return all matches (not only the first), use the querySelectorAll() instead. -->
+
+    <!-- selecting by an id  -->
+    <div id="box">i am box1</div>
+    <div id="box">i am box2</div>
+    <div id="box">i am box3 </div>
+
+
+    <!-- selecting by class name -->
+    <div class="list">1111</div>
+    <div class="list">2222</div>
+    <div class="list">3333</div>
+    <div class="list">4444</div>
+
+    <!-- selecting by tag name  -->
+    <P>WELCOME HTML</P>
+    <P>WELCOME CSS</P>
+    <P>WELCOME JAVASCRIPT</P>
+
+
+    <script>
+
+        var box = document.querySelector('#box');
+        var list = document.querySelector('.list');
+        var p = document.querySelector('p');
+
+        console.log(box);
+        console.log(list);
+        console.log(p);
+        
+    </script>
+
+</body>
+</html>

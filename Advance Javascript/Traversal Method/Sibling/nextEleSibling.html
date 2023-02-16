@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Element Sibling </title>
+
+    <style>
+        #box{
+            width: 60%;
+            height: 222px;
+            border: 11px solid black;
+            margin: 111px auto;
+            text-align: center;
+            background-color: aqua;
+        }
+
+        #html,#css,#javascript{
+             height: 111px;
+             width: 111px;
+             border: 5px solid black;
+             background-color: greenyellow;
+             display: inline-block;
+             margin: 22px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- selecting next element sibling  -->
+
+    <div id="box">
+        <div id="html"> HTML </div>
+        <div id="css"> CSS  </div>
+        <div id="javascript"> Javascript  </div>
+        <div id="reactjs"> Reactjs </div>
+    </div>
+
+
+    <script>
+
+       var html = document.getElementById('html');
+       var css = document.getElementById('css');
+       var js = document.getElementById('javascript');
+
+       console.log(html.nextElementSibling);
+       console.log(css.nextElementSibling);
+       console.log(js.nextElementSibling);
+    
+        
+    </script>
+
+
+    
+</body>
+</html>

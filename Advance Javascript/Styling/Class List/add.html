@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class List Add </title>
+
+    <style>
+        .decorate{
+            height: 222px;
+            width: 222px;
+            border: 2px solid black;
+            background-color: goldenrod;
+            margin: 111px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- adding the class List  -->
+    
+    <div id="box">
+        I Am Box 
+        <h2>Click Me </h2>
+    </div>
+    
+
+    <script>
+         var box = document.getElementById('box');
+
+         box.addEventListener('click' , function() {
+            box.classList.add('decorate');
+         });
+
+    </script>
+    
+</body>
+</html>

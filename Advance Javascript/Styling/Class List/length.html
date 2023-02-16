@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Length Class List </title>
+
+    <style>
+        .border{
+           border: 11px solid black;
+        }
+
+        .shape{
+            height: 222px;
+            width: 222px;
+            margin: 111px;
+        }
+
+        .background{
+            background-color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- getting the length of class list  -->
+    <div id="box" class="border shape background">
+        I Am Box 
+    </div>
+
+
+    <script>
+       
+       var box  = document.getElementById('box');
+       console.log(box.classList.length);
+ 
+    </script>
+    
+</body>
+</html>

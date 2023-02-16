@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerText</title>
+</head>
+<body>
+
+
+    <div id="textContent">
+        <h1 id="html">HTML</h1>
+        <h1 id="css">CSS</h1>
+        <h1 id="javascript">Javascript</h1>
+    </div>
+
+
+
+    <script>
+
+        // getting the inner text 
+        var html  =  document.getElementById('html').innerText;
+        var css = document.getElementById('css').innerText;
+        var javascript = document.getElementById('javascript').innerText;
+
+        console.log(html);
+        console.log(css);
+        console.log(javascript);
+
+
+        // setting the inner text 
+        
+        document.getElementById('html').innerText = 'Welcome HTML ';
+        document.getElementById('css').innerText = 'Welcome CSS';
+        document.getElementById('javascript').innerText = 'Welcome Javascript';
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onfocus Form Event  </title>
+
+</head>
+<body>
+
+    <!-- onfocus Event on input box  -->
+    <!-- The onfocus event occurs when an element gets focus The onfocus event is often used on input fields. -->
+
+    <form>
+        <input type="text" placeholder="Enter the usename.." onfocus="bgchange(this)" >  <br>
+        <input type="password" placeholder="Enter the Password" onfocus="bgchange(this)"> <br>
+    </form>
+    
+
+    <script>
+
+        function bgchange(ele){
+          ele.style.background = 'grey';
+        }
+    </script>
+
+
+
+</body>
+</html>

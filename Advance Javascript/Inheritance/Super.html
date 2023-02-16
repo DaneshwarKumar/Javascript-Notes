@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super function </title>
+</head>
+<body>
+
+    <h2>Super function in Inheritance </h2>
+
+    <!-- super function is used to get all the features of parent class  -->
+    <!-- child class Must call constructor of parent class with the super function  -->
+
+    <script>
+
+    // parent class or base class 
+        class Employee{
+            constructor(){
+                console.log("Employee Constructor");
+            }
+
+            getInfo(){
+                console.log("Employee Information function");
+            }
+        }
+
+    // derived class or child class 
+        class Manager extends Employee {
+            constructor(){
+                super();
+                console.log("Manager constructor");
+            }
+
+
+            getInfo(){
+                // calling the parent function 
+                super.getInfo();
+                console.log("Manager Information function");
+            }
+
+        }
+         
+
+        let m1 = new Manager();
+        m1.getInfo();
+
+    </script>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Variable Scope</title>
+</head>
+<body>
+
+
+    <script>
+        // creating global variable 
+        var name = "global";
+
+        function outer(){
+            // creating an outer variable 
+            var  name = "outer";
+
+            function inner(){
+                // creating inner variable 
+                var name = "inner";
+                console.log(name);
+            }
+
+            inner();
+            console.log(name);
+        }
+
+        outer();
+
+
+
+        console.log(name);
+
+    </script>
+    
+</body>
+</html>

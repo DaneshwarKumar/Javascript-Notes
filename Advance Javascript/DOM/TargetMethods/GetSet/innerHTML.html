@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerHTML</title>
+</head>
+<body>
+
+    <div id="innerHTML">
+        <h1 id="html">HTML</h1>
+        <h1 id="css">CSS</h1>
+        <h1 id="js">Javascript</h1>
+        <h1 id="react">ReactJs</h1>
+    </div>
+    
+
+
+
+    <script>
+         
+        //  getting the methods 
+         var innerHTML =   document.getElementById('innerHTML').innerHTML; 
+         var html = document.getElementById('html').innerHTML;
+         var css  = document.getElementById('css').innerHTML;
+         var js = document.getElementById('js').innerHTML;
+         var react = document.getElementById('react').innerHTML;
+
+
+         console.log(innerHTML);
+         console.log(html);
+         console.log(css);
+         console.log(js);
+         console.log(react);
+
+
+        //  setting the methods 
+      
+        document.getElementById('html').innerHTML = 'Welcome HTML';
+        document.getElementById('css').innerHTML = 'Welcome CSS';
+        document.getElementById('js').innerHTML = 'Welcome Javascript';
+        document.getElementById('react').innerHTML = 'Welcome Reactjs';
+
+
+    </script>
+
+
+
+</body>
+</html>

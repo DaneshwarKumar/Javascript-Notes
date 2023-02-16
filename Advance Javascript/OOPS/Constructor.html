@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Constructor </title>
+</head>
+<body>
+
+    <h2>Constructor </h2>
+
+    <script>
+
+    // creating class and constructor 
+    // constructor are used to initiase an object 
+    class user{
+        
+        constructor(name,age,city){
+            this.name = name;
+            this.age = age;
+            this.city = city;
+        }
+
+        userDetails(){
+            document.write(` ${this.name}  ${this.age}  ${this.city}  <br>`);
+        }
+
+    }
+
+
+    var u1 = new user("Aman" , 33 , "Indore");
+    var u2 = new user("Ram" , 23 , "Delhi");
+    var u3 = new user("Akash" , 34 , "Indore");
+
+    u1.userDetails();
+    u2.userDetails();
+    u3.userDetails();
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear Interval </title>
+
+    <style>
+        #box{
+            height: 111px;
+            width: 111px;
+            border: 2px solid black;
+            background-color: green;
+            margin: 111px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- The clearInterval() method clears a timer set with the setInterval() method. -->
+
+    <div id="box">
+        I Am Box 
+    </div>
+
+    <script>
+
+        var box = document.getElementById('box');
+        var a = 10;
+    // setting the interval 
+        var interval =  setInterval(Slide,1000);
+
+        function Slide(){
+            a = a+10;
+
+            if(a==100){
+                // clear the interval 
+                clearInterval(interval);
+            }
+
+            box.style.margin = a+'px';
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Array Destructuring </title>
+</head>
+<body>
+
+    <h2>Array Destructuring </h2>
+
+    <script>
+
+        // destructuring array 
+        var Student = ["Aman Gupta" , 33 , "Male" ,"Delhi"];
+        var [name,age,gender,city] = Student;
+
+        document.write(` ${name}  ${age}  ${gender}  ${city}   <br>` );
+
+        // default value and undefined 
+        var Employee = ["Ram Verma" , 25.55 , "Male" , "Pune"];
+        var [name, ,gender,city="Delhi"] =  Employee;
+
+
+        document.write(` ${name}  ${age}  ${gender}  ${city}   <br>` );
+
+
+    </script>
+
+
+</body>
+</html>

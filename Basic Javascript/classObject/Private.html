@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+/*
+Private class features
+Class fields are public by default, but private class members can be created by using a hash # prefix.
+The privacy encapsulation of these class features is enforced by JavaScript itself.
+it can not be directly access by objects outside the class it can be access using another function 
+*/
+
+class Emp{
+    #name; // private variable 
+    constructor(n){
+        this.#name = n;
+    }
+
+    getName(){
+        console.log(this.#name);
+    }
+
+    // private Method 
+    #Hi(){
+        console.log("Hi");
+    }
+
+    sayHi(){
+       this.#Hi();
+    }
+
+}
+
+let E = new Emp("Vishwajeet");
+E.getName();
+E.sayHi();
+
+
+</script>
+</body>
+</html>

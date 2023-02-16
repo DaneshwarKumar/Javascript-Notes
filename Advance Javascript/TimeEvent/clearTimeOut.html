@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClearTimeOut</title>
+</head>
+<body>
+    
+    <!-- The clearTimeout() method clears a timer set with the setTimeout() method. -->
+    <b>Wait for 3 minutes </b>                                             <br><br>
+    <input type="Submit" value="ClearInterval" onclick="clearInter()">     <br><br>
+
+    <script>
+         
+         var interval = setTimeout(myFunction , 3000);
+
+         function myFunction(){
+          document.write('<h1> Set Time Out Activated </h1>');
+         }
+
+
+         function clearInter(){
+            clearInterval(interval);
+         }
+
+    </script>
+    
+</body>
+</html>

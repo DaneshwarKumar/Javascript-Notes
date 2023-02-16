@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Attribute</title>
+</head>
+<body>
+
+    <div id="box">
+        <h1 id="html" style="border: 2px solid red;">HTML</h1>
+        <h1 id="css" style="border: 2px solid green;">CSS</h1>
+        <h1 id="js" style="border: 2px solid brown;">Javascript</h1>
+        <h1 id="react" style="border: 2px solid orange;">React Js</h1>
+    </div>
+
+
+    <script>
+
+        var html = document.getElementById('html').getAttribute('style');
+        var css = document.getElementById('css').getAttribute('style');
+         var Javascript = document.getElementById('js').getAttribute('id');
+        var react = document.getElementById('react').getAttribute('id');
+
+
+        console.log(html);
+        console.log(css);
+        console.log(Javascript);
+        console.log(react);
+
+
+
+    </script>
+    
+    
+</body>
+</html>

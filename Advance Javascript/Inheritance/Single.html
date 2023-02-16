@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance </title>
+</head>
+<body>
+
+    <h3>Inheritance in Javascript </h3>
+
+    <script>
+       
+    //    parent class or base class 
+       class Vehicle{
+           vehicleDetails(){
+            console.log("I am vehicle function ");
+           }
+       }
+
+    // derived class or child class 
+       class Bike extends Vehicle{
+          constructor(){
+            super();        // super function must to call to get features of parent class and parent contructor 
+            console.log("I am Bike constructor");
+          }
+
+          bikeDetails(){
+            console.log("I am Bike function");
+          }
+       }
+
+       var b1 = new Bike();
+
+      // getting the method of parent class and child class 
+       b1.vehicleDetails();
+       b1.bikeDetails();
+
+
+
+    </script>
+    
+</body>
+</html>

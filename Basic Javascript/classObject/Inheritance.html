@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+/*
+Class Inheritance 
+To create a class inheritance, use the extends keyword.
+A class created with a class inheritance inherits all the methods from another class:
+
+*/
+
+class Emp{
+    constructor(n){
+        this.name = n;
+    }
+}
+
+class Manager extends Emp{
+     
+}
+
+let m1 = new Manager("Akash Gupta");
+console.log(m1);
+
+
+/*
+
+The super() method refers to the parent class : 
+By calling the super() method in the constructor method, we call the parent's constructor method and
+gets access to the parent's properties and methods.
+
+
+*/
+
+class Car {
+  constructor(brand) {
+    this.carname = brand;
+  }
+  present() {
+    return 'I have a ' + this.carname;
+  }
+}
+
+// inheriting property from car class 
+class Model extends Car {
+  constructor(brand, mod) {
+    super(brand);
+    this.model = mod;
+  }
+
+  show() {
+   console.log(super.present() + ', it is a ' + this.model);
+  }
+
+}
+
+let myCar = new Model("Ford", "Mustang");
+
+myCar.show();
+
+ 
+
+
+</script>
+    
+</body>
+</html>

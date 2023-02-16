@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WindowClose</title>
+</head>
+<body>
+
+    
+    <button onclick="openGmail()">Open Gmail </button>      <button onclick="closeGmail()">Close Gmail  </button>    <br> <br>
+    <button onclick="openGFG()">Open GFG </button>          <button onclick="closeGFG()">Close GFG </button>            <br> <br>
+    <button onclick="openYouTube()">Open YouTube </button>  <button onclick="closeYouTube()">Close YouTube </button>     <br> <br>
+
+    <script>
+
+    //    function to open gmail 
+        function openGmail(){
+           var gmail =  window.open('https://mail.google.com' , '_blank' , "height: 222px, width : 222px , top : 333px , left : 333px");
+        }
+
+    // function to open GFG 
+    function openGFG(){
+         var gfg  =  window.open('https://www.geeksforgeeks.org/' , '_blank' , "height = 555px, width = 555px , top = 333px , left = 333px");
+    }
+
+    // function to open GFG 
+    function openYouTube(){
+        var youtube =   window.open('https://www.youtube.com/watch?v=tkMZ5n8EObk' , '_blank' , "height=555px , width=555px , top=222px , left=222px");
+    }
+
+
+    // function to close youtube 
+    function closeYouTube()
+    {
+        youtube.close();
+    }
+
+    // function to close GFG 
+    function closeGFG(){
+        gfg.close();
+    }
+
+    // function to  close gmail 
+    function closeGmail(){
+        gmail.close();
+    }
+
+    
+    </script>
+    
+    
+</body>
+</html>

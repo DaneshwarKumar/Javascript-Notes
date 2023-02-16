@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class List Item </title>
+    <style>
+        .border{
+            border: 11px solid black;
+        }
+
+        .shape{
+            height: 222px;
+            width: 222px;
+            margin: 111px;
+        }
+
+        .bg{
+            background-color: goldenrod;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!--  getting the class list one by one   -->
+    <div id="box" class="border shape bg">
+        I Am Box 
+    </div>
+    
+
+    <script>
+
+        var box = document.getElementById('box');
+
+        console.log(box.classList);
+        console.log(box.classList.item(0));
+        console.log(box.classList.item(1));
+        console.log(box.classList.item(2));
+        
+    </script>
+
+
+
+</body>
+</html>

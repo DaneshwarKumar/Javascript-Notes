@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Attributes </title>
+</head>
+<body>
+     <!-- Attributes function returns all the attributes in form of an array  -->
+    <div id="box" class="box" style="height: 222px; width: 222px; margin: 111px; border: 2px solid green;" ></div>
+
+    <script>
+
+        var box = document.getElementById('box').attributes;
+
+        console.log(box);
+        console.log(box[0]);
+        console.log(box[1]);
+        console.log(box[2]);
+
+    </script>
+    
+</body>
+</html>

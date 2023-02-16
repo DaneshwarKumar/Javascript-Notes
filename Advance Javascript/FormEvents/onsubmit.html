@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Event </title>
+</head>
+<body>
+    
+<!-- The onsubmit event occurs when a form is submitted. -->
+    <form onsubmit="myFunction(event)">
+          <input type="text" placeholder="Enter Username...">   <br><br>
+          <input type="password" placeholder="Enter password">  <br><br>
+          <input type="submit">
+    </form>
+
+    <!-- meaning that the default action that belongs to the event will not occur.
+        For example, this can be useful when:
+        *  Clicking on a "Submit" button, prevent it from submitting a form
+        *  Clicking on a link, prevent the link from following the URL -->
+
+    <script>
+
+        function myFunction(event){
+            event.preventDefault();
+            console.log("Form is Submitted");
+        }
+
+
+    </script>
+
+
+
+</body>
+</html>

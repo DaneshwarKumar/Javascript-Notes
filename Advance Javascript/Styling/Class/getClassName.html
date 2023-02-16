@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Class Name </title>
+
+    <style>
+        .border{
+            border: 11px solid green;
+        }
+
+        .shape{
+            height: 222px;
+            width: 222px;
+        }
+
+        .background{
+            background-color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Get Class Name </h1>
+
+    <!-- getting the class Name -->
+
+    <div id="box" class="border shape background">
+        I am Box
+    </div>
+
+
+    <script>
+
+        var box = document.getElementById('box');
+
+        var border = box.className;
+        var shape = box.className;
+        var background = box.className;
+
+        console.log(border);
+        console.log(shape);
+        console.log(background);
+
+        
+    </script>
+    
+
+
+</body>
+</html>

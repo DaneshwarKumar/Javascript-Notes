@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before Begin </title>
+    <style>
+        #box{
+            height: 222px;
+            width: 40%;
+            margin: 111px auto;
+            background-color: grey;
+            padding: 111px;
+        }
+
+        #para{
+            border: 2px solid red;
+            padding: 11px;
+        }
+    </style>
+</head>
+<body>
+
+     <div id="box">
+        <p id="para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ipsa maxime natus et magni harum delectus nulla sint provident quam corporis eos, quisquam aspernatur consectetur nam dicta incidunt est asperiores ullam placeat repudiandae cum architecto neque. Atque aliquid nisi ea, et quisquam ad ratione. Enim error saepe, possimus deserunt ad libero odio fugit! Porro, labore!</p>
+    </div>
+
+
+    <script>
+
+        var para = document.getElementById('para');
+        var newEle = '<h1> Welcome To Web Development Course </h1>';
+
+        para.insertAdjacentHTML("afterbegin" , newEle);
+
+
+    </script>
+    
+</body>
+</html>

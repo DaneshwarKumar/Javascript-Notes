@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class target </title>
+</head>
+<body>
+
+    <h2>Target By Class Name </h2>
+
+    <div class="list">
+        <li>11</li>
+        <li>22</li>
+        <li>33</li>
+    </div>
+    
+
+    <div class="list">
+        <li>AA</li>
+        <li>BB</li>
+        <li>CC</li>
+    </div>
+    
+
+    <div class="list">
+        <li>11.11</li>
+        <li>22.22</li>
+        <li>33.33</li>
+    </div>
+    
+    <!-- class will be targeted in form of an array  -->
+
+    <script>
+
+        var list = document.getElementsByClassName('list');
+
+        console.log(list);
+
+        console.log(list[0]);
+        console.log(list[1]);
+        console.log(list[2]);
+
+
+    </script>
+
+
+    
+</body>
+</html>

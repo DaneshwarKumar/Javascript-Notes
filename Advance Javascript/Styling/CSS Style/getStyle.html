@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Style</title>
+</head>
+<body>
+
+    <h2>CSS Styling </h2>
+
+    <div id="box" style="height: 222px; width: 222px; border: 11px solid green; background-color: goldenrod;"> I am Box </div>
+
+    <!-- getting the styles  -->
+
+    <script>
+
+        var box = document.getElementById('box');
+
+        var borderStyle = box.style.border;
+        var heightStyle = box.style.height;
+        var widthStyle  = box.style.width;
+       
+        console.log(borderStyle);
+        console.log(heightStyle);
+        console.log(widthStyle);
+
+
+    </script>
+    
+</body>
+</html>

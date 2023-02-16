@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Child </title>
+
+    <style>
+        #box{
+            width: 60%;
+            height: 222px;
+            border: 11px solid black;
+            margin: 111px auto;
+            text-align: center;
+            background-color: aqua;
+        }
+
+        #b{
+             height: 111px;
+             width: 111px;
+             border: 5px solid black;
+             background-color: greenyellow;
+             display: inline-block;
+             margin: 22px;
+        }
+    </style>
+</head>
+<body>
+
+ <!-- first child select all the elements like enter , white space , new line   -->
+
+    <div id="box">
+        <div id="b"> 111</div>
+        <div id="b"> 222 </div>
+        <div id="b"> 333 </div>
+        <div id="b"> 444 </div>
+    </div>
+
+
+    <script>
+        // selecting the first child 
+        console.log(document.body.firstChild);
+
+        var box = document.getElementById('box');
+        console.log(box.firstChild);
+
+       
+        
+    </script>
+
+
+    
+</body>
+</html>

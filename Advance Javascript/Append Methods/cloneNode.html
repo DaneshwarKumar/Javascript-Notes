@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Node</title>
+</head>
+<body>
+
+    <ol id="list">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Mango</li>
+        <li>Guava</li>
+    </ol>
+
+
+    <script>
+
+    //   false : it will come text and attributes 
+    //   true : it will copy tag , attributes , text all of these 
+
+    var apple = document.getElementById('list').children[0];
+    var banana = document.getElementById('list').children[1];
+    var mango = document.getElementById('list').children[2];
+    var guava = document.getElementById('list').children[3];
+
+    var appleClone = apple.cloneNode(true);
+    var bananaClone = banana.cloneNode(true);
+    var mangoClone = mango.cloneNode(false);
+    var guavaClone = guava.cloneNode(false);
+
+    console.log(appleClone);
+    console.log(bananaClone);
+    console.log(mangoClone);
+    console.log(guavaClone);
+
+    </script>
+    
+</body>
+</html>

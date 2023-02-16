@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Children</title>
+
+    <style>
+        #box{
+            width: 60%;
+            height: 222px;
+            border: 11px solid black;
+            margin: 111px auto;
+            text-align: center;
+            background-color: aqua;
+        }
+
+        #b{
+             height: 111px;
+             width: 111px;
+             border: 5px solid black;
+             background-color: greenyellow;
+             display: inline-block;
+             margin: 22px;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div id="box">
+        <div id="b"> 111</div>
+        <div id="b"> 222 </div>
+        <div id="b"> 333 </div>
+        <div id="b"> 444 </div>
+    </div>
+
+
+    <script>
+
+        var box = document.getElementById('box');
+
+        // selecting childrens 
+        console.log(box.children);
+
+        console.log(box.children[0]);
+
+        console.log(box.children[1]);
+
+        console.log(box.children[2]);
+
+        console.log(box.children[3]);
+
+        
+    </script>
+
+
+    
+</body>
+</html>

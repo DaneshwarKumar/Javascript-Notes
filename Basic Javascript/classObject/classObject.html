@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+/*
+Classes are templates for JavaScript Objects.
+
+JavaScript Class Syntax : 
+Use the keyword class to create a class.
+
+Always add a method named constructor():
+
+Syntax : 
+class ClassName {
+  constructor() { ... }
+}
+
+
+A JavaScript class is not an object.
+
+It is a template for JavaScript objects.
+
+*/
+
+
+class Student{
+
+    constructor(first,last,age){
+        this.first = first;
+        this.last = last;
+        this.age = age ;
+    }
+
+    printFullName(){
+        console.log(this.first+" "+this.last);
+    }
+
+}
+
+
+// When you have a class, you can use the class to create objects 
+
+let s1 = new Student("Aman","Mishra",25);
+let s2 = new Student("Akash","Gupta",26);
+
+s1.printFullName();
+s2.printFullName();
+
+
+</script>
+    
+</body>
+</html>

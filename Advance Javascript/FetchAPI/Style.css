@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.heading{
+    text-align: center;
+    margin: 11px;
+}
+
+#cards{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 11px auto;
+}
+
+
+.card{
+    text-align: center;
+    width: 25%;
+    border: 2px solid black;
+    box-shadow: 4px 4px 4px gray;
+    margin: 11px;
+    border-radius: 15px;
+}
+
+.img{
+    width: 80%;
+    height: 222px;
+}
+
+.category,.description,.price{
+    font-size: 12px;
+    font-weight: 900;
+}

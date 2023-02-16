@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append Child </title>
+    <style>
+        #box{
+            height: 333px;
+            width: 333px;
+            border: 11px solid black;
+            margin: 111px auto;
+            padding: 11px;
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="box">
+        <!--  here all childs will be append  -->
+    </div>
+
+    <script>
+        // appending child using an javascript 
+
+        var h1 = document.createElement('h1');
+        var text = document.createTextNode('Welcome To FullStack Web Development Course ');
+
+        var ele = h1.appendChild(text);
+
+        document.getElementById('box').appendChild(ele);
+        
+    </script>    
+</body>
+</html>
